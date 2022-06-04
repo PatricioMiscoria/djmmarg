@@ -188,10 +188,6 @@ nav{
     margin: 0 auto;
     }
 
-    .claseSection{
-        display: none;
-    }
-
     .claseNav{
         display: none;
     }
@@ -213,6 +209,7 @@ nav{
         display: grid;
         grid-template-areas:  "menuCel menuCel"
                               "asideizquierdo asidederecho"                            
+                              "productos productos"
                               "footer footer";
         grid-template-rows: auto auto; /* FILAS 1° Header 2°AsideIzquierod 3°Section 4°footer*/
         grid-template-columns: 50% 50%; /* COLUMNAS */
@@ -270,6 +267,7 @@ nav{
         left: 0;
         background: #dabf49;
         width: 100%;
+        max-height: 80%; /* Esto es el alto del menu emerjente del celular*/
         display: flex;
         justify-content: space-evenly;
         flex-direction: column;
@@ -335,9 +333,23 @@ nav{
     }
     
     .claseSection{
-        display: none;
+        /*display: none;*/
     
     }
+
+    /*
+    .footerCelular{
+        background-color: rgb(0, 0, 0);
+       /* border-radius: 20px; */
+     /*   display: flex;
+        
+        align-items: center;
+        /*position: absolute;
+        bottom: 0;*/
+     /*   width: 100vh; /* Ancho del Footer*/
+     /*   height: 80px; /* alto del Footer*/
+
+    /*}*/
 
     .footerCelular{
         background-color: rgb(0, 0, 0);
@@ -363,5 +375,17 @@ nav{
     .footerCelular__ytb__img{
         width: 50px;
         height: 50px;
+    }
+
+    .footerCelular__facebook{
+        padding-left: 3%;
+    }
+
+    .footerCelular__intagram{
+        padding-left: 6%;
+    }
+
+    .footerCelular__ytb{
+        padding-left: 6%;
     }
 }
