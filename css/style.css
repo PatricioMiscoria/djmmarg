@@ -184,10 +184,10 @@ nav{
 
     /*Contenedor para Centrar toda la Pagina*/
     #contenedor{
-    width: 98%;
+    width: 100%;
     margin: 0 auto;
     }
-    
+
     .claseSection{
         display: none;
     }
