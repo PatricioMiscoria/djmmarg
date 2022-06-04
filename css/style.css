@@ -1,0 +1,354 @@
+body{
+    background-color: rgb(0, 0, 0);
+    /*border: solid 2px rgb(255, 0, 0);*/
+}
+
+ /* Estilo de texto de los botones*/
+ .btn1, .btn2, .btn3, .btn4, .btn5, .btn6{
+    font-size: 100%;  
+    width: 15%;
+    height: 80%;
+    border-radius: 30px;
+    line-height: 200%;
+    text-align: center;
+    vertical-align: middle;
+    background-color:  rgb(255, 153, 0);
+    color: aliceblue;
+
+}
+
+ /*Centra los el #botones y los achica*/ 
+.claseNav{  
+    margin: 0 auto; /*Centra los el #botones */ 
+    width: 95%;
+}
+
+/* Estilo Padre de los Botones*/
+#botones{
+    display: flex; 
+    justify-content:space-between;    
+    background-color: rgba(7, 224, 224, 0.534);
+    border-radius: 30px;  
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;  
+    padding-left: 5%;
+    padding-right: 5%;
+   
+    }
+
+#padre{
+    
+        display: grid;
+        grid-template-areas:  "header header header"
+                              "menu menu menu"            
+                              "asideizquierdo productos asidederecho"
+                              "footer footer footer";
+        grid-template-rows: auto auto auto auto; /* FILAS 1° Header 2°AsideIzquierod 3°Section 4°footer*/
+        grid-template-columns: 20% auto 20%; /* COLUMNAS */
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+}
+
+/*Contenedor para Centrar toda la Pagina*/
+#contenedor{
+    width: 98%;
+    margin: 0 auto;
+}
+
+
+ body{
+    /*background-color: yellow; */
+    font-family: 'Secular One', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+
+/*Clases de los contenedores*/
+.claseHeader{
+    /*border: solid 2px black;*/
+}
+
+
+
+.claseAside1{
+    border: solid 2px rgb(255, 255, 255);
+    background: #55fd5d;
+	color: rgb(0, 0, 0);
+	display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+
+.claseAside2{
+    border: solid 2px rgb(255, 255, 255);
+    background: #55a8fd;
+	color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+
+.claseSection{
+    border: solid 2px rgb(255, 255, 255);
+}
+.claseFooter{
+    border: solid 2px rgb(255, 255, 255);
+}
+
+
+
+header{
+    grid-area: header; 
+    /*background-color: blue;*/
+}
+
+footer{
+    grid-area: footer;
+}
+
+section{
+    grid-area: productos;
+}
+
+
+nav{
+    grid-area: menu;
+   
+}
+
+.footerCelular{
+    display: none;
+}
+
+
+
+.posicionlogo{
+    display: flex;
+    justify-content: center;
+}
+
+.estiloLogo{
+    max-width: 30%;
+    max-height: 30%;
+}
+
+.posicionfoto1{
+   display: flex;
+    justify-content: center;    
+}
+
+.estilofoto1{
+   max-width: 100%;
+    max-height: 100%;
+}
+
+.posicionfoto2{
+    display: flex;
+     justify-content: center;    
+ }
+ 
+ .estilofoto2{
+    max-width: 100%;
+     max-height: 100%;
+ }
+
+ .nav{
+    display: none;
+}
+
+/* Estilo para el footer html inicio*/
+.footerestiloinicio{
+    background-color: rgba(7, 224, 224, 0.534);
+    border-radius: 30px;
+    text-align: center;
+    font-size: 200%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%; 
+ 
+}
+
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+
+
+/*  CELULAR: */
+/*  CELULAR: */
+/*  CELULAR: */
+/*  CELULAR: */
+@media (max-width: 700px) {
+    body{
+        background-color: rgb(255, 0, 0);
+    }
+
+    /*Contenedor para Centrar toda la Pagina*/
+    #contenedor{
+    width: 98%;
+    margin: 0 auto;
+    }
+    
+    .claseSection{
+        display: none;
+    }
+
+    .claseNav{
+        display: none;
+    }
+
+    header{
+        display: none;
+    }
+
+    .nav{
+        display: block;
+    }
+
+    nav{
+        grid-area: menuCel;
+       
+    }
+
+   #padre{ 
+        display: grid;
+        grid-template-areas:  "menuCel menuCel"
+                              "asideizquierdo asidederecho"                            
+                              "footer footer";
+        grid-template-rows: auto auto; /* FILAS 1° Header 2°AsideIzquierod 3°Section 4°footer*/
+        grid-template-columns: 50% 50%; /* COLUMNAS */
+        grid-column-gap: 5px;
+        grid-row-gap: 2px;
+    }
+
+    .footerestiloinicio{
+        background-color: rgb(209, 224, 7);
+        border-radius: 30px;     
+        font-size: 200%;
+        /*padding-top: 0.5%;
+        padding-bottom: 0.5%;
+        padding-left: 0.5%;
+        padding-right: 0.5%;        */
+    }
+
+    .posicionlogo{
+        display: flex;
+        justify-content: left;
+    }    
+    .estiloLogo{
+        max-width: 40%;
+        max-height: 40%;
+    }
+
+
+
+    /* Clases de todo el NAV / Menu para Celular*/
+    /* Clases de todo el NAV / Menu para Celular*/
+    .nav{
+        background-color: #000000;
+     
+          color: rgb(255, 255, 255);
+    }
+
+    .nav__container{
+        display: flex;
+        height: 100%;
+        width: 95%;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+    } 
+
+    .nav__logo{
+        font-size: 1.5em;
+        font-weight: 900;
+    }
+
+    .nav__menu{      
+        position: fixed;
+        top: 30px; 
+        bottom: 0;
+        left: 0;
+        background: #dabf49;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center); /* Esto es para que el efecto del menu arranque en 0 al centro*/
+        transition: clip-path 1s ease-in-out; /* */
+    }
+
+    .nav__item{
+        color: #fff;
+        text-decoration: none;
+        --clippy: polygon(0 0, 0 0, 0 100%, 0 100%); /* para animar la barra debajo del texto*/
+    }
+
+    /* Cuando el elemento no tiene el mouse ensima*/
+    .nav__item::after{
+        content: "";
+        display: block;
+        background: #fff;
+        width: 90%;
+        margin-top: 3px; /* Un Margen para que se separe del elemento 3PX*/
+        height: 3px; /* el ancho de la linea */
+        clip-path: var(--clippy); /* para animar la barra debajo del texto*/
+        transition: clip-path .5s; /* Para que la animacion de la barra del texto tarde 5 segundos*/
+    }
+
+    /* Cuando el elemento tiene el mouse ensima*/
+    .nav__item:hover{
+        --clippy: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+    }
+
+    /* Cuando el elemento nav__input esta chequeado el elemento nav__menu cambie*/
+    .nav__input:checked + .nav__menu {
+        clip-path: circle(100% at center);
+    }
+    .nav__input {
+        display: none;
+    }
+    
+    .nav__label{
+        display: block;
+        cursor: pointer;
+    }
+
+    /* Clases de todo el NAV / Menu para Celular*/
+    /* Clases de todo el NAV / Menu para Celular*/
+
+    .footerCelular{
+        display: block;
+    }
+
+    .footerestiloinicio{
+        display: none;
+    }
+    
+    .claseSection{
+        display: none;
+    
+    }
+
+    .footerCelular{
+        background-color: rgb(0, 0, 0);
+       /* border-radius: 20px; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+
+    }
+
+    .footerCelular__facebook__img{
+
+    }
+    .footerCelular__instagram__img{
+
+    }
+    .footerCelular__ytb__img{
+
+    }
+}
