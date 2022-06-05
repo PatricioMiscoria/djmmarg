@@ -217,9 +217,9 @@ nav{
         display: grid;
         grid-template-areas:  "menuCel menuCel"
                               "asideizquierdo asidederecho"                            
-                              "productos productos"
+                              /*"productos productos"*/
                               "footer footer";
-        grid-template-rows: auto auto; /* FILAS 1° Header 2°AsideIzquierod 3°Section 4°footer*/
+        grid-template-rows: auto auto; /* FILAS */
         grid-template-columns: 50% 50%; /* COLUMNAS */
         grid-column-gap: 5px;
         grid-row-gap: 2px;
@@ -260,12 +260,12 @@ nav{
 
     .nav__menu{      
         position: fixed;
-        top: 110px; 
+        top: 100px; 
         bottom: 0;
         left: 0;
         background: #dabf49;
         width: 100%;
-        max-height: 80%; /* Esto es el alto del menu emerjente del celular*/
+        max-height: 90%; /* Esto es el alto del menu emerjente del celular*/
         display: flex;
         justify-content: space-evenly;
         flex-direction: column;
@@ -275,8 +275,9 @@ nav{
     }
 
     .nav__item{
-        color: #fff;
+        color: #fff; /* Color de la letra del menu animado*/
         text-decoration: none;
+        font-size: 30px; /* Tamaño de la letra del menu animado*/
         --clippy: polygon(0 0, 0 0, 0 100%, 0 100%); /* para animar la barra debajo del texto*/
     }
 
